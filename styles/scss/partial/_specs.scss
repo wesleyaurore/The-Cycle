@@ -1,0 +1,132 @@
+/*----------------------SPEC-----------------------------*/
+
+section#tab-2 {
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: 1s;
+	background: #18273c;
+
+	figure.background{
+		position: relative;
+		width: 100%;
+		float: left;
+		
+		img.bg-specs{
+			width: 100%;
+			height: 100vh;
+		}
+
+		@media screen and (max-width: 960px){
+			img.bg-specs{ height: initial; }
+		}
+
+	}
+	@media screen and (max-width: 480px){
+		figure.background{ margin-top: 30%; }
+	}		
+
+	div.specs{
+		width: 100%;
+		position: absolute;
+		color: #fff;	
+
+		div.specs-title{
+			width: 100%;
+			position: absolute;
+			text-align: center;
+			color: #fff;
+
+			h4{
+				margin: 5% 0 1%; 
+				font-size: 25px;
+				font-weight: 400;
+			}
+			
+			@media screen and (max-width: 960px){
+				h4{	margin-top: 10%; }
+			}
+
+			@media screen and (max-width: 480px){
+				h4{ 
+					font-size: 20px;
+					margin-top: 22%; }
+			}	
+
+			h2{
+				font-size: 40px;
+				font-weight: 700;
+				color: #26F8FF;
+			}
+
+			@media screen and (max-width: 480px){
+				h2{ 
+					font-size: 30px;
+				}
+			}	
+		}
+
+		div.specs-otherwise{
+			width: 20%;
+			float: left;
+			margin-left: 10%;
+			margin-top: 5%;
+
+			h4{
+				margin:5% 0;
+				font-size: 20px;
+				font-weight: 700;
+			}
+
+			@media screen and (max-width: 960px){
+				h4{ margin: 5% 0 1%; }
+			}
+
+			p{
+				font-size: 16px;
+				line-height: 17px;
+				font-weight: 300;
+			}
+		}
+
+		@media screen and (max-width: 960px){
+			div.specs-otherwise{ 
+				width: 100%;
+				margin-left: 2%;
+				margin-top: -5%;
+				z-index: 999;
+			}
+		}	
+
+
+		div.specs-city{
+			width: 25%;
+			float: right;
+			margin-top: 30%;
+
+			h4 {
+				font-size: 20px;
+				font-weight: 700;
+				margin: 5% 0;
+			}
+
+			p{
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 17px;
+			}
+		}
+
+		@media screen and (max-width: 960px){
+			div.specs-city{ display: none; }
+		}
+	}
+	@media screen and (max-width: 960px){
+		div.specs{ 
+			position: initial;
+		}
+	}	
+
+}

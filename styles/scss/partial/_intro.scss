@@ -1,0 +1,110 @@
+/*----------------INTRO---------------*/
+
+div.intro{
+	width: 100%;
+	height: 100vh;
+	background-color: #18273c;
+	transition: 1s;
+	opacity: 1s;
+	overflow: hidden;
+
+	h1.cycle{
+		width: 100%;
+		position: absolute;
+		top: 10%;
+		font-size: 80px;
+		font-weight: 700;
+		color:  #26F8FF;
+		text-align: center; 
+	
+		strong{
+			color: #FFF;
+		}
+	}
+
+	@media screen and (max-width: 480px){
+		h1.cycle{
+			top: 20%; 
+			font-size: 55px; 
+		}
+	}
+	
+	svg{
+		width: 50%;
+		margin: 0 25%;
+		position: absolute;
+		top: 28%;
+		background: transparent;
+		transition: 1s ;
+		overflow: hidden;
+		
+		.cls-1{
+			stroke-dasharray: 3;
+			stroke-dashoffset: 500000;
+			animation: dash 60s linear;
+		}
+
+		@keyframes dash {
+			to{	stroke-dashoffset: 0; }
+		}
+	
+		&:last-of-type{
+			background: transparent;
+			transform: rotate(180deg);
+		}
+	}
+
+	@media screen and (max-width: 960px){
+		svg{ 
+			width: 65%;
+			margin: 0 17.5% ;
+			top: 32%;
+		}
+	}
+
+	@media screen and (max-width: 768px){
+		svg{ 
+			width: 70%;
+			margin: 0 15% ;
+			top: 34%;
+		}
+	}
+
+	@media screen and (max-width: 480px){
+		svg{ 
+			width: 85%;
+			margin: 0 7.5%;
+			top: 40%;
+		}
+	}
+
+	p.power{
+		width: 87%;
+		position: absolute;
+		top: 80%;
+		font-weight: 300;
+		font-size: 22px;
+		color:  #26F8FF;
+		text-align: center;
+		
+		img{	
+			position: absolute;
+			width: 14%;
+			margin-left: 1%;
+			bottom: -60%;
+		}
+		@media screen and (max-width: 480px){
+			img{ 
+				width: 32%; 
+				bottom: -60%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 480px){
+		p.power{
+			width: 75%;
+			font-size: 15px;
+		}
+	}
+}

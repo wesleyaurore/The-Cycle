@@ -1,0 +1,55 @@
+/*--------------GALERIE-----------------------*/
+
+section#tab-4{
+	height: 100vh;
+	position: absolute;
+	top: 0%;
+	left: -100%;
+	float: left;
+	overflow: hidden;
+	background: #18273c;
+	opacity: 0;
+	transition: 1s; 
+
+	figure.galerie{
+		float: left;
+		width: 33.33333333%;
+		
+		img.img-galerie{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: 768px){
+		figure.galerie{	width: 50%; }
+	}
+
+	@media screen and (max-width: 480px){			
+		figure.galerie{
+			:first-of-type{ width: 100%; }
+		}
+	}
+}
+
+/*------------------active------------------------*/
+
+section#tab-1.active,section#tab-2.active,
+section#tab-3.active,section#tab-4.active{
+	display: block;
+	width: 100%;
+	height: 100vh;
+	transition: 1s;
+	opacity: 1 ;
+	left: 0;
+}
+
+.strong{
+	font-weight: 700;
+}
+
+li.active {
+	font-weight: bold;
+}
+
